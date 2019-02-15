@@ -37,7 +37,7 @@ class Logger:
             '{}/D_error'.format(self.comment), d_error, step)
         self.writer.add_scalar(
             '{}/G_error'.format(self.comment), g_error, step)
-
+ 
     def log_images(self, images, num_images, epoch, n_batch, num_batches, format='NCHW', normalize=True):
         '''
         input images are expected in format (NCHW)
